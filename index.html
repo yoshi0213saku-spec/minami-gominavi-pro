@@ -210,6 +210,16 @@
             "粗大ごみ": "bg-purple-600 text-white"
         };
 
+        /**
+         * 文字列の正規化（ひらがな→カタカナ変換、空白除去、小文字化）
+         */
+        const normalize = (str) => {
+            return str
+                .toLowerCase()
+                .replace(/[ぁ-ん]/g, s => String.fromCharCode(s.charCodeAt(0) + 0x60)) // ひらがな→カタカナ
+                .replace(/\s+/g, ''); // 空白除去
+        };
+
         // 検索結果の表示
         function displayResults(query) {
             if (!query) {
@@ -223,10 +233,12 @@
                 return;
             }
 
-            const filtered = gomiData.filter(d => 
-                d.item.includes(query) || 
-                d.category.includes(query)
-            );
+            const q = normalize(query);
+            const filtered = gomiData.filter(d => {
+                const item = normalize(d.item);
+                const category = normalize(d.category);
+                return item.includes(q) || category.includes(q);
+            });
 
             if (filtered.length === 0) {
                 resultsList.innerHTML = `
