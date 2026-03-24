@@ -42,7 +42,7 @@
         <div class="max-w-md mx-auto text-center">
             <div class="inline-flex items-center justify-center bg-white/20 backdrop-blur-md p-3 rounded-2xl mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                 </svg>
             </div>
             <h1 class="text-2xl font-bold tracking-tight">南相木村 ごみナビ</h1>
@@ -53,25 +53,25 @@
     <!-- Main Content -->
     <main class="max-w-md mx-auto px-5 -mt-10">
         
-        <!-- Contact Support (Top Position) -->
+        <!-- Contact Support (Top) -->
         <div class="mb-4 p-4 bg-blue-50/95 backdrop-blur rounded-2xl border border-blue-100 text-sm shadow-sm fade-in">
             <div class="flex items-center mb-1">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
                 </svg>
-                <span class="font-bold text-blue-800 text-[10px] uppercase tracking-wider font-sans">Contact Support</span>
+                <span class="font-bold text-blue-800 text-[10px] uppercase tracking-wider">Contact Support</span>
             </div>
             <p class="text-blue-700 leading-relaxed font-medium text-xs">
                 不明な点は、南相木村 役場住民課まで：<br>
-                <a href="tel:0267781050" class="text-lg font-bold underline decoration-blue-300 font-sans tracking-wider">0267-78-1050</a>
+                <a href="tel:0267781050" class="text-lg font-bold underline decoration-blue-300 tracking-wider">0267-78-1050</a>
             </p>
         </div>
 
-        <!-- Quick Access Section -->
+        <!-- Documents Section (Top Links) -->
         <div class="mb-6 space-y-3 fade-in">
-            <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest ml-1 font-sans">Quick Access & Documents</p>
+            <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest ml-1">Documents & Links</p>
             <div class="grid grid-cols-1 gap-3">
-                <!-- PDF Link -->
+                <!-- PDF Link: リポジトリのgomi-list.pdfに合わせて修正 -->
                 <a href="gomi-list.pdf" target="_blank" class="flex items-center p-4 bg-white rounded-2xl shadow-sm border border-gray-100 active:scale-95 transition-transform">
                     <div class="bg-red-50 p-3 rounded-xl mr-4">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -79,12 +79,12 @@
                         </svg>
                     </div>
                     <div>
-                        <span class="block font-bold text-gray-700 text-sm font-sans">ごみ分別一覧表 (PDF)</span>
-                        <span class="text-[10px] text-gray-400 font-medium italic font-sans text-xs">全品目の分別ルールを確認</span>
+                        <span class="block font-bold text-gray-700 text-sm">ごみ分別一覧表 (PDF)</span>
+                        <span class="text-[10px] text-gray-400 font-medium italic text-xs">リポジトリの資料を確認</span>
                     </div>
                 </a>
                 
-                <!-- Calendar Jump Link -->
+                <!-- Calendar Link -->
                 <a href="#calendarSection" class="flex items-center p-4 bg-white rounded-2xl shadow-sm border border-gray-100 active:scale-95 transition-transform">
                     <div class="bg-orange-50 p-3 rounded-xl mr-4">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -92,8 +92,8 @@
                         </svg>
                     </div>
                     <div>
-                        <span class="block font-bold text-gray-700 text-sm font-sans">収集カレンダーを見る</span>
-                        <span class="text-[10px] text-gray-400 font-medium italic font-sans text-xs">令和8年度の収集日を確認</span>
+                        <span class="block font-bold text-gray-700 text-sm">収集カレンダーを表示</span>
+                        <span class="text-[10px] text-gray-400 font-medium italic text-xs">令和8年度の収集スケジュール</span>
                     </div>
                 </a>
             </div>
@@ -115,7 +115,7 @@
                 </div>
             </div>
             <div id="statusMessage" class="mt-3 text-[10px] text-center text-green-600 font-bold tracking-wider">
-                ● 検索システム稼働中
+                ● 検索システム準備完了
             </div>
         </div>
 
@@ -127,7 +127,7 @@
         <!-- Calendar Section -->
         <section id="calendarSection" class="mb-10 pt-4">
             <div class="flex items-center justify-between mb-4 px-2">
-                <h2 class="text-lg font-bold text-gray-800 flex items-center">
+                <h2 class="text-lg font-bold text-gray-800 flex items-center tracking-tighter">
                     <span class="mr-2">📅</span>令和8年度 収集カレンダー
                 </h2>
                 <span class="text-[10px] text-gray-400 font-bold bg-white px-2 py-1 rounded-md border border-gray-100">2026-2027</span>
@@ -135,10 +135,10 @@
 
             <!-- Legend Card -->
             <div class="bg-white rounded-2xl p-4 mb-4 shadow-sm border border-gray-100 grid grid-cols-2 gap-2 text-[11px]">
-                <div class="flex items-center bg-gray-50 p-2 rounded-lg"><b class="text-blue-600 mr-2">(不)</b> 不燃ごみ(第1火)</div>
-                <div class="flex items-center bg-gray-50 p-2 rounded-lg"><b class="text-amber-700 mr-2">(古)</b> 古紙類(第1水)</div>
-                <div class="flex items-center bg-gray-50 p-2 rounded-lg"><b class="text-pink-500 mr-2">(プ)</b> プラ類(第2・4水)</div>
-                <div class="flex items-center bg-gray-50 p-2 rounded-lg"><b class="text-green-600 mr-2">(缶)</b> 缶・びん(第3水)</div>
+                <div class="flex items-center bg-gray-50 p-2 rounded-lg font-bold"><b class="text-blue-600 mr-2">(不)</b> 不燃ごみ(第1火)</div>
+                <div class="flex items-center bg-gray-50 p-2 rounded-lg font-bold"><b class="text-amber-700 mr-2">(古)</b> 古紙類(第1水)</div>
+                <div class="flex items-center bg-gray-50 p-2 rounded-lg font-bold"><b class="text-pink-500 mr-2">(プ)</b> プラ類(第2・4水)</div>
+                <div class="flex items-center bg-gray-50 p-2 rounded-lg font-bold"><b class="text-green-600 mr-2">(缶)</b> 缶・びん(第3水)</div>
             </div>
 
             <!-- Monthly Cards Container -->
@@ -147,14 +147,14 @@
             </div>
         </section>
 
-        <footer class="text-center mt-12 text-gray-400 text-[10px] pb-10 uppercase tracking-[0.2em] font-sans">
+        <footer class="text-center mt-12 text-gray-400 text-[10px] pb-10 uppercase tracking-[0.2em]">
             &copy; 2025 Minamiaiki Village Office
         </footer>
     </main>
 
     <script>
         /**
-         * 収集カレンダーデータ
+         * 収集カレンダーデータ (令和8年度)
          */
         const calendarData = [
             { month: "4月", burnable: "6, 13, 20, 27", resources: "7(不), 1(古), 8(プ), 15(缶), 22(プ)" },
@@ -172,34 +172,57 @@
         ];
 
         /**
-         * 分別検索データ
+         * 分別検索データ (初期サンプル兼フォールバック)
          */
-        const gomiData = [
-            { item: "なべ・釜", category: "金物類", method: "透明・半透明の袋に入れて出してください。" },
+        let gomiData = [
+            { item: "鍋・釜（なべ・かま）", category: "金物類", method: "透明・半透明の袋に入れて出してください。取っ手が外れるものは外してください。" },
             { item: "フライパン", category: "金物類", method: "透明・半透明の袋に入れて出してください。" },
-            { item: "スプレー缶", category: "資源物", method: "中身を完全に使い切り、火の気のない外で穴を開けずに出してください。" },
-            { item: "カセットボンベ", category: "資源物", method: "使い切ってから資源物として出してください。" },
+            { item: "スプレー缶", category: "資源物", method: "中身を完全に使い切り、穴を開けずに出してください。" },
             { item: "新聞紙", category: "資源物", method: "ひもで十字に縛って出してください。雨の日は控えてください。" },
-            { item: "雑誌・チラシ", category: "資源物", method: "ひもで十字に縛って出してください。" },
-            { item: "ダンボール", category: "資源物", method: "折りたたんでひもで縛ってください。" },
             { item: "ペットボトル", category: "資源物", method: "キャップとラベルを外し、中を洗って潰してください。" },
-            { item: "スニーカー・靴", category: "可燃ごみ", method: "指定の可燃ごみ袋に入れてください。" },
-            { item: "乾電池", category: "有害ごみ", method: "役場や各収集所の専用回収箱へ出してください。" },
-            { item: "蛍光管・電球", category: "有害ごみ", method: "購入時の箱に入れるか、紙に包んで出してください。" },
-            { item: "ライター", category: "可燃ごみ", method: "中身を使い切ってから出してください。" },
-            { item: "布団・毛布", category: "粗大ごみ", method: "粗大ごみシールを貼って指定日に出してください。" },
-            { item: "テレビ・冷蔵庫", category: "対象外", method: "家電リサイクル法対象品です。購入店へ相談してください。" },
-            { item: "パソコン", category: "対象外", method: "メーカーまたは専門業者に回収を依頼してください。" },
-            { item: "ガラス瓶", category: "資源物", method: "キャップを外し、中を洗って色別にカゴへ。" },
-            { item: "アルミ缶・スチール缶", category: "資源物", method: "中を洗って専用の回収カゴへ。" },
-            { item: "プラスチック製容器包装", category: "可燃ごみ", method: "汚れの落ちないものは可燃ごみへ。" },
-            { item: "生ごみ", category: "可燃ごみ", method: "十分に水切りをしてから出してください。" },
-            { item: "剪定枝", category: "可燃ごみ", method: "50cm以内に切り、ひもで束ねて出してください。" }
+            { item: "靴（くつ）", category: "可燃ごみ", method: "指定の可燃ごみ袋に入れてください。" },
+            { item: "乾電池", category: "有害ごみ", method: "役場や各収集所の専用回収箱へ出してください。" }
         ];
 
         const searchInput = document.getElementById('searchInput');
         const resultsList = document.getElementById('resultsList');
         const calendarContainer = document.getElementById('calendarContainer');
+        const statusMessage = document.getElementById('statusMessage');
+
+        /**
+         * 文字列の正規化（検索強化用：ご提示のロジックベース）
+         */
+        const normalize = (str) => {
+            if (!str) return "";
+            return str
+                .toLowerCase()
+                .replace(/[ぁ-ん]/g, s => String.fromCharCode(s.charCodeAt(0) + 0x60)) // ひらがな→カタカナ
+                .replace(/[Ａ-Ｚａ-ｚ０-９]/g, s => String.fromCharCode(s.charCodeAt(0) - 0xfee0)) // 全角→半角
+                .replace(/[\s　]+/g, '') // 空白・全角空白除去
+                .toLowerCase();
+        };
+
+        // CSV読み込み設定 (リポジトリのgomi-list.csvに合わせて修正)
+        function loadCSV() {
+            Papa.parse("gomi-list.csv", {
+                download: true,
+                header: true,
+                skipEmptyLines: true,
+                complete: function(results) {
+                    if (results.data && results.data.length > 0) {
+                        gomiData = results.data.map(row => ({
+                            item: row.品目 || row['品目名'] || "",
+                            category: row.分別区分 || row['区分'] || "不明",
+                            method: row.出し方 || row['説明'] || ""
+                        })).filter(d => d.item !== "");
+                        statusMessage.innerText = `● 外部データ(${gomiData.length}件)を読み込みました`;
+                    }
+                },
+                error: function() {
+                    statusMessage.innerText = "● 内蔵データで動作中（CSV読込不可）";
+                }
+            });
+        }
 
         const categoryStyles = {
             "可燃ごみ": "bg-red-500 text-white",
@@ -210,24 +233,14 @@
             "粗大ごみ": "bg-purple-600 text-white"
         };
 
-        /**
-         * 文字列の正規化（ひらがな→カタカナ変換、空白除去、小文字化）
-         */
-        const normalize = (str) => {
-            return str
-                .toLowerCase()
-                .replace(/[ぁ-ん]/g, s => String.fromCharCode(s.charCodeAt(0) + 0x60)) // ひらがな→カタカナ
-                .replace(/\s+/g, ''); // 空白除去
-        };
-
         // 検索結果の表示
         function displayResults(query) {
             if (!query) {
                 resultsList.innerHTML = `
                     <div class="text-center py-10 fade-in bg-white/40 rounded-3xl border-2 border-dashed border-white/60">
                         <div class="text-4xl mb-4 grayscale opacity-20 text-center">♻️</div>
-                        <p class="text-gray-400 text-xs font-bold tracking-widest text-center">資料から調べる</p>
-                        <p class="text-gray-300 text-[9px] mt-1 text-center">調べたい品目を入力してください</p>
+                        <p class="text-gray-400 text-xs font-bold tracking-widest text-center font-sans">資料から調べる</p>
+                        <p class="text-gray-300 text-[9px] mt-1 text-center font-sans">調べたい品目や区分を入力してください</p>
                     </div>
                 `;
                 return;
@@ -245,7 +258,7 @@
                     <div class="bg-white p-10 rounded-3xl text-center shadow-sm fade-in border border-gray-100">
                         <div class="text-4xl mb-3 font-serif">?</div>
                         <p class="text-gray-600 font-bold tracking-tighter text-lg">「${query}」は見つかりません</p>
-                        <p class="text-gray-400 text-xs mt-3 leading-relaxed font-medium font-sans">別の言葉で試すか、<br>役場まで直接お問い合わせください。</p>
+                        <p class="text-gray-400 text-xs mt-3 leading-relaxed font-medium">言い換え（例：机→テーブル）を試すか、<br>役場まで直接お問い合わせください。</p>
                     </div>
                 `;
                 return;
@@ -253,20 +266,20 @@
 
             resultsList.innerHTML = filtered.map((item, index) => `
                 <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 fade-in overflow-hidden relative" style="animation-delay: ${index * 0.03}s">
-                    <div class="absolute left-0 top-0 bottom-0 w-1 ${categoryStyles[item.category] ? categoryStyles[item.category].split(' ')[0] : 'bg-gray-200'}"></div>
+                    <div class="absolute left-0 top-0 bottom-0 w-1.5 ${categoryStyles[item.category] ? categoryStyles[item.category].split(' ')[0] : 'bg-gray-200'}"></div>
                     <div class="flex justify-between items-start mb-3 pl-1">
-                        <h3 class="text-lg font-bold text-gray-800 font-sans tracking-tighter">${item.item}</h3>
-                        <span class="category-tag ${categoryStyles[item.category] || 'bg-gray-200 text-gray-600'} font-sans">
+                        <h3 class="text-lg font-bold text-gray-800 tracking-tighter leading-tight">${item.item}</h3>
+                        <span class="category-tag ${categoryStyles[item.category] || 'bg-gray-200 text-gray-600'}">
                             ${item.category}
                         </span>
                     </div>
                     <div class="bg-gray-50 rounded-xl p-4 text-sm text-gray-600 flex border border-gray-100">
-                        <div class="min-w-[20px] text-green-600 mr-3 mt-0.5 font-sans">
-                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 font-sans">
+                        <div class="min-w-[20px] text-green-600 mr-3 mt-0.5">
+                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-11.25a.75.75 0 00-1.5 0v2.5h-2.5a.75.75 0 000 1.5h2.5v2.5a.75.75 0 001.5 0v-2.5h2.5a.75.75 0 000-1.5h-2.5v-2.5z" clip-rule="evenodd" />
                             </svg>
                         </div>
-                        <p class="font-medium leading-relaxed font-sans">${item.method}</p>
+                        <p class="font-medium leading-relaxed">${item.method}</p>
                     </div>
                 </div>
             `).join('');
@@ -278,16 +291,16 @@
                 <div class="bg-white rounded-2xl p-4 shadow-sm border border-gray-50 overflow-hidden relative group">
                     <div class="flex items-center justify-between mb-3 border-b border-gray-50 pb-2">
                         <span class="text-xl font-bold text-green-700">${data.month}</span>
-                        <span class="text-[10px] text-gray-300 font-sans tracking-widest font-bold">MONTHLY</span>
+                        <span class="text-[10px] text-gray-300 tracking-widest font-bold font-sans">MONTHLY SCHEDULE</span>
                     </div>
                     <div class="space-y-3">
                         <div class="flex items-center justify-between">
-                            <span class="text-[11px] font-bold text-red-400 bg-red-50 px-2 py-0.5 rounded text-center">可燃 (月)</span>
+                            <span class="text-[11px] font-bold text-red-500 bg-red-50 px-2 py-0.5 rounded text-center">可燃 (月曜)</span>
                             <span class="text-sm text-gray-700 font-bold font-sans">${data.burnable}</span>
                         </div>
                         <div class="flex items-start justify-between">
-                            <span class="text-[11px] font-bold text-blue-400 bg-blue-50 px-2 py-0.5 rounded text-center mt-0.5 font-sans">資源 (火水)</span>
-                            <span class="text-sm text-gray-700 font-bold font-sans text-right leading-relaxed flex-1 ml-4">${data.resources}</span>
+                            <span class="text-[11px] font-bold text-blue-500 bg-blue-50 px-2 py-0.5 rounded text-center mt-0.5 font-sans">資源 (火水)</span>
+                            <span class="text-sm text-gray-700 font-bold font-sans text-right leading-relaxed flex-1 ml-4 tracking-tighter">${data.resources}</span>
                         </div>
                     </div>
                 </div>
@@ -300,6 +313,7 @@
 
         // 起動時に初期表示
         window.addEventListener('DOMContentLoaded', () => {
+            loadCSV();
             displayResults("");
             displayCalendar();
         });
