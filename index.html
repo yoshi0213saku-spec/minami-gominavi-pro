@@ -53,25 +53,24 @@
     <!-- Main Content -->
     <main class="max-w-md mx-auto px-5 -mt-10">
         
-        <!-- Contact Support (Top) -->
-        <div class="mb-4 p-4 bg-blue-50/95 backdrop-blur rounded-2xl border border-blue-100 text-sm shadow-sm fade-in">
-            <div class="flex items-center mb-1">
+        <!-- Contact Support (Top) - Centered -->
+        <div class="mb-4 p-4 bg-blue-50/95 backdrop-blur rounded-2xl border border-blue-100 text-sm shadow-sm fade-in text-center">
+            <div class="flex items-center justify-center mb-1">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
                 </svg>
-                <span class="font-bold text-blue-800 text-[10px] uppercase tracking-wider">Contact Support</span>
+                <span class="font-bold text-blue-800 text-[10px] uppercase tracking-wider font-sans">Contact Support</span>
             </div>
             <p class="text-blue-700 leading-relaxed font-medium text-xs">
-                不明な点は、南相木村 役場住民課まで：<br>
+                不明な点は、南相木村 役場住民課へ：<br>
                 <a href="tel:0267781050" class="text-lg font-bold underline decoration-blue-300 tracking-wider">0267-78-1050</a>
             </p>
         </div>
 
         <!-- Documents Section (Top Links) -->
         <div class="mb-6 space-y-3 fade-in">
-            <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest ml-1">Documents & Links</p>
+            <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest ml-1 font-sans">Documents & Links</p>
             <div class="grid grid-cols-1 gap-3">
-                <!-- PDF Link: リポジトリのgomi-list.pdfに合わせて修正 -->
                 <a href="gomi-list.pdf" target="_blank" class="flex items-center p-4 bg-white rounded-2xl shadow-sm border border-gray-100 active:scale-95 transition-transform">
                     <div class="bg-red-50 p-3 rounded-xl mr-4">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -79,12 +78,11 @@
                         </svg>
                     </div>
                     <div>
-                        <span class="block font-bold text-gray-700 text-sm">ごみ分別一覧表 (PDF)</span>
-                        <span class="text-[10px] text-gray-400 font-medium italic text-xs">リポジトリの資料を確認</span>
+                        <span class="block font-bold text-gray-700 text-sm font-sans">ごみ分別一覧表 (PDF)</span>
+                        <span class="text-[10px] text-gray-400 font-medium italic text-xs">全品目の分別ルールを確認</span>
                     </div>
                 </a>
                 
-                <!-- Calendar Link -->
                 <a href="#calendarSection" class="flex items-center p-4 bg-white rounded-2xl shadow-sm border border-gray-100 active:scale-95 transition-transform">
                     <div class="bg-orange-50 p-3 rounded-xl mr-4">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -92,7 +90,7 @@
                         </svg>
                     </div>
                     <div>
-                        <span class="block font-bold text-gray-700 text-sm">収集カレンダーを表示</span>
+                        <span class="block font-bold text-gray-700 text-sm font-sans">収集カレンダーを表示</span>
                         <span class="text-[10px] text-gray-400 font-medium italic text-xs">令和8年度の収集スケジュール</span>
                     </div>
                 </a>
@@ -175,13 +173,17 @@
          * 分別検索データ (初期サンプル兼フォールバック)
          */
         let gomiData = [
-            { item: "鍋・釜（なべ・かま）", category: "金物類", method: "透明・半透明の袋に入れて出してください。取っ手が外れるものは外してください。" },
+            { item: "鍋・釜（なべ・かま）", category: "金物類", method: "透明・半透明の袋に入れて出してください。" },
             { item: "フライパン", category: "金物類", method: "透明・半透明の袋に入れて出してください。" },
             { item: "スプレー缶", category: "資源物", method: "中身を完全に使い切り、穴を開けずに出してください。" },
-            { item: "新聞紙", category: "資源物", method: "ひもで十字に縛って出してください。雨の日は控えてください。" },
+            { item: "新聞紙", category: "資源物", method: "ひもで十字に縛って出してください。" },
             { item: "ペットボトル", category: "資源物", method: "キャップとラベルを外し、中を洗って潰してください。" },
             { item: "靴（くつ）", category: "可燃ごみ", method: "指定の可燃ごみ袋に入れてください。" },
-            { item: "乾電池", category: "有害ごみ", method: "役場や各収集所の専用回収箱へ出してください。" }
+            { item: "乾電池", category: "有害ごみ", method: "専用回収箱へ出してください。" },
+            { item: "ライター", category: "可燃ごみ", method: "使い切ってから出してください。" },
+            { item: "布団・毛布", category: "粗大ごみ", method: "粗大ごみシールを貼って指定日に出してください。" },
+            { item: "ガラス瓶", category: "資源物", method: "色別にカゴへ。" },
+            { item: "アルミ缶", category: "資源物", method: "中を洗って専用のカゴへ。" }
         ];
 
         const searchInput = document.getElementById('searchInput');
@@ -190,7 +192,7 @@
         const statusMessage = document.getElementById('statusMessage');
 
         /**
-         * 文字列の正規化（検索強化用：ご提示のロジックベース）
+         * 文字列の正規化（検索強化：ひらがな→カタカナ変換、空白除去、小文字化）
          */
         const normalize = (str) => {
             if (!str) return "";
@@ -202,26 +204,37 @@
                 .toLowerCase();
         };
 
-        // CSV読み込み設定 (リポジトリのgomi-list.csvに合わせて修正)
+        // CSV読み込み
         function loadCSV() {
-            Papa.parse("gomi-list.csv", {
-                download: true,
-                header: true,
-                skipEmptyLines: true,
-                complete: function(results) {
-                    if (results.data && results.data.length > 0) {
-                        gomiData = results.data.map(row => ({
-                            item: row.品目 || row['品目名'] || "",
-                            category: row.分別区分 || row['区分'] || "不明",
-                            method: row.出し方 || row['説明'] || ""
-                        })).filter(d => d.item !== "");
-                        statusMessage.innerText = `● 外部データ(${gomiData.length}件)を読み込みました`;
+            try {
+                Papa.parse("gomi-list.csv", {
+                    download: true,
+                    header: true,
+                    skipEmptyLines: true,
+                    complete: function(results) {
+                        if (results.data && results.data.length > 0) {
+                            const parsed = results.data.map(row => ({
+                                item: row.品目 || row['品目名'] || row['Item'] || "",
+                                category: row.分別区分 || row['区分'] || row['Category'] || "不明",
+                                method: row.出し方 || row['説明'] || row['Method'] || ""
+                            })).filter(d => d.item !== "");
+                            
+                            if (parsed.length > 0) {
+                                gomiData = parsed;
+                                statusMessage.innerText = `● CSVデータ(${gomiData.length}件)を読み込みました`;
+                                displayResults(searchInput.value.trim());
+                            }
+                        }
+                    },
+                    error: function(err) {
+                        console.warn("CSV読み込みに失敗しました(フォールバックを使用):", err);
+                        statusMessage.innerText = "● 内蔵データで動作中";
                     }
-                },
-                error: function() {
-                    statusMessage.innerText = "● 内蔵データで動作中（CSV読込不可）";
-                }
-            });
+                });
+            } catch (e) {
+                console.warn("XMLHttpRequest実行エラー(フォールバックを使用):", e);
+                statusMessage.innerText = "● 内蔵データで動作中";
+            }
         }
 
         const categoryStyles = {
@@ -240,7 +253,7 @@
                     <div class="text-center py-10 fade-in bg-white/40 rounded-3xl border-2 border-dashed border-white/60">
                         <div class="text-4xl mb-4 grayscale opacity-20 text-center">♻️</div>
                         <p class="text-gray-400 text-xs font-bold tracking-widest text-center font-sans">資料から調べる</p>
-                        <p class="text-gray-300 text-[9px] mt-1 text-center font-sans">調べたい品目や区分を入力してください</p>
+                        <p class="text-gray-300 text-[9px] mt-1 text-center font-sans">品目（ひらがな可）や区分を入力してください</p>
                     </div>
                 `;
                 return;
@@ -258,7 +271,7 @@
                     <div class="bg-white p-10 rounded-3xl text-center shadow-sm fade-in border border-gray-100">
                         <div class="text-4xl mb-3 font-serif">?</div>
                         <p class="text-gray-600 font-bold tracking-tighter text-lg">「${query}」は見つかりません</p>
-                        <p class="text-gray-400 text-xs mt-3 leading-relaxed font-medium">言い換え（例：机→テーブル）を試すか、<br>役場まで直接お問い合わせください。</p>
+                        <p class="text-gray-400 text-xs mt-3 leading-relaxed font-medium">別の言葉で試すか、役場まで直接お問い合わせください。</p>
                     </div>
                 `;
                 return;
@@ -311,7 +324,7 @@
             displayResults(e.target.value.trim());
         });
 
-        // 起動時に初期表示
+        // 起動時
         window.addEventListener('DOMContentLoaded', () => {
             loadCSV();
             displayResults("");
